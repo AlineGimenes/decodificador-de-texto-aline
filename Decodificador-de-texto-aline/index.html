@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto - aline</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <header class="cabecalho">
+        <img src="assets/logo.svg">
+    </header>
+    <main class="main">
+        <section class="main__input">
+            <textarea class="main__input__texto" name="input" id="input" rows="10" placeholder="Digite seu texto"></textarea>
+            <div class="main__input__alerta">
+                <img class="main__input__alerta__img" src="assets/alerta.svg" alt="Alerta">
+                <p class="main__input__alerta__texto">Apenas letras minusculas</p>
+            </div>
+            <div class="main__input__botao">
+                <button class="main__input__botao__criptografar" onclick="criptografarTexto()" >Criptografar</button>
+                <button class="main__input__botao__descriptografar" onclick="descriptografarTexto()">Descriptografar</button>
+            </div>
+        </section>
+        <section class="main__semtexto" id="semtexto">
+            <img class="main__semtexto__img" src="assets/img.svg" alt="img">
+            <h1 class="main__semtexto__texto">Nenhuma mensagem encontrada</h1>
+            <p class="main__semtexto__paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </section>
+        <section class="main__output" id="output">
+            <h1 id="output__texto" class="main__output__texto"></h1>
+            <button class="main__output__copiar" onclick="copiar()" >Copiar</button>
+        </section>
+    </main>
+    <footer>
+        <p class="rodape">By Aline Gimenes</p>
+    </footer>
+    <script src="app.js" ></script>
+</body>
+</html>
